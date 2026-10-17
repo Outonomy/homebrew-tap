@@ -1,8 +1,8 @@
 # Written by the Release workflow from scripts/homebrew/cask.rb in the application's repository, at
 # every release; an edit made in the tap is overwritten by the next one.
 cask "northern-commander" do
-  version "0.14.0"
-  sha256 "5275e2668725c978a20f02b8358eed62c33ac3f1014d9504f792ea0d23f85b61"
+  version "0.14.1"
+  sha256 "446b420cb940b9bf2cfcd2a5d6b8c5d984d3db138c64566ebb4690b6187ed428"
 
   url "https://downloads.northerncommander.com/app/macos/NorthernCommander-#{version}.dmg"
   name "Northern Commander"
