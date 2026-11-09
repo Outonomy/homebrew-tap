@@ -1,8 +1,8 @@
 # Written by the Release workflow from scripts/homebrew/cask.rb in the application's repository, at
 # every release; an edit made in the tap is overwritten by the next one.
 cask "northern-commander" do
-  version "1.1.0"
-  sha256 "c4bb7af52c61880d8f64a81f9e03bc038863c95d7f81d885346510ac383475ac"
+  version "1.2.0"
+  sha256 "ba6dac8f0e22bd560c13ff1320956f0958df9b064cad0743cce6a06f8928c195"
 
   url "https://downloads.northerncommander.com/app/macos/NorthernCommander-#{version}.dmg"
   name "Northern Commander"
@@ -14,6 +14,8 @@ cask "northern-commander" do
   depends_on macos: ">= :ventura"
 
   app "Northern Commander.app"
+  binary "#{appdir}/Northern Commander.app/Contents/MacOS/ncmd"
+  binary "#{appdir}/Northern Commander.app/Contents/MacOS/ncmd", target: "northern-commander"
 
   # Not ~/.northern-commander: it holds the person's settings and, unless they moved them, their backups.
   zap trash: [
